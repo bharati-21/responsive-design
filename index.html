@@ -1,23 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- Remove the meta tag below to see the difference in how width of screen is calculated and how content is scaled -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Design</title>
 
-    <title>Demo without viewport</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
 
-    <style>
-        p {
-            font-size: 20px;
-        }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
 
-    </style>
-</head>
-<body>
-    <img src="https://images.unsplash.com/photo-1623665038131-5c5d434b8bcf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=200">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos exercitationem illum expedita, recusandae iure porro? Totam in itaque aliquam impedit quibusdam incidunt pariatur quod aperiam quaerat necessitatibus at voluptatem voluptatum assumenda, officiis laudantium explicabo beatae ducimus quam, ab repellat minus. Quas perspiciatis ducimus dolorem assumenda deserunt rem sequi! Optio corrupti dolor doloremque amet voluptatum eligendi natus laudantium, eius repudiandae excepturi vel odio consequuntur delectus iste ratione fugit voluptates inventore hic. Ea ut facere corporis cum, sed rerum at voluptatem. Corrupti accusantium non dignissimos saepe at adipisci voluptates tempora labore voluptatem, ullam molestias accusamus dolore temporibus corporis quaerat suscipit enim recusandae sunt sapiente inventore architecto alias odit. Repudiandae ex asperiores necessitatibus aliquid temporibus facilis dignissimos tenetur, sed quos ut consequuntur minima cum quasi ipsam nam voluptate iusto consequatur distinctio nostrum praesentium accusantium iste! Optio iure sit fugiat magnam eligendi illo consectetur, repudiandae esse impedit temporibus tenetur atque velit dolorum adipisci. Quidem, eligendi soluta rem sapiente ullam architecto sint quia minus impedit eos vero vel accusantium quas obcaecati. Commodi placeat cumque, eos, dolorum necessitatibus expedita doloremque alias ipsum laudantium reprehenderit iste. Accusamus magnam hic vero ipsa quam, exercitationem dignissimos tempora, impedit odit, excepturi earum nihil atque dolor quas consectetur explicabo aspernatur repudiandae.</p>
-</body>
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .container {
+                background: #f4f4f4;
+                max-width: 1100px;
+                margin: auto;
+                text-align: center;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .hero-head {
+                margin-bottom: 1.5rem;
+                text-transform: uppercase;
+                font-size: 2.5rem;
+            }
+
+            .flex-container {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .flex-item {
+                font-size: 1.5rem;
+                margin: 1rem;
+                padding: 1rem;
+                background: #333;
+                color: #fff;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="flex-container">
+                <h1 class="hero-head">Responsive Design Techniques</h1>
+                <div class="flex-item">
+                    <a href="Viewport.html" id="viewport">Setting The Viewport</a>
+                </div>
+                <div class="flex-item">
+                    <a href="fluidWidths.html" id="fluid-width">Fluid Widths and Fluid Layout</a>
+                </div>
+                <div class="flex-item">
+                    <a href="mediaQueries.html" id="media-queries">Media Queries</a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
